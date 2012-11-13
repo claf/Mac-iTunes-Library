@@ -13,6 +13,8 @@ our @EXPORT = qw( );
 
 our $VERSION = '1.0';
 
+sub TO_JSON { return { %{ shift() } }; }
+
 =head1 NAME
 
 Mac::iTunes::Library::Item - Perl extension for representing an item
